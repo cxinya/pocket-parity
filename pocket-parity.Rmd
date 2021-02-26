@@ -9,8 +9,7 @@ output:
   html_document:
     toc: true
     toc_float: true
-    css: ["pocket-parity-style.css"]
-  includes: header.html
+    css: ["pocket-parity-style.css", "www/css/zilla-slab.css", "www/css/montserrat.css"]
 ---
 
 **Cynthia X. Yuen** | `r format(Sys.Date(), '%B %d, %Y')`
@@ -28,12 +27,30 @@ library(showtext)
 library(sjPlot)
 library(sjmisc)
 library(sjlabelled)
+library(gfonts)
 
-# Load Mathematica fonts
+# Load Mathematica fonts for figs
 
 font_add_google("Montserrat", "mont")
 font_add_google("Zilla Slab", "zilla")
 showtext_auto()
+
+# Load Mathematica fonts for body
+
+setup_font(
+  id = "zilla-slab",
+  output_dir = "www",
+  variants = c("regular", "italic", "bold")
+)
+use_font("zilla-slab", "www/css/zilla-slab.css")
+
+setup_font(
+  id = "montserrat",
+  output_dir = "www",
+  variants = c("regular", "italic", "bold")
+)
+use_font("montserrat", "www/css/montserrat.css")
+
 
 ```
 
