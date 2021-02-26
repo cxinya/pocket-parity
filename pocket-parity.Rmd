@@ -140,7 +140,7 @@ A score of 0, which (spoiler) no brand achieved, represents a perfectly just wor
 
 ## "Gap" is Right
 
-In this sample of 20 brands, women's jeans had an average pocket size of `r round(mean(brands_parity$avg_area_w), 1)` sq. cm, whereas men had a generous `r round(mean(brands_parity$avg_area_m), 1)`. That's an overall pocket parity score of `r round(mean(brands_parity$avg_area_w) / mean(brands_parity$avg_area_m) - 1, 2)` sq. cm, meaning that women are losing out on almost half the pocket space that men have. Although all women's pockets were smaller than men's, there was wide variation in pocket parity between brands: Abercrombie scored well below average (`r format(round(brands_parity$pocket_size_parity[brands_parity$brand == "Abercrombie"], 2), nsmall = 2)`) &mdash; which in this case is a good thing &mdash; and Gap scoring a sad `r format(round(brands_parity$pocket_size_parity[brands_parity$brand == "Gap"], 2), nsmall = 2)`, which translates to `r round(brands_parity$pocket_size_parity[brands_parity$brand == "Gap"] * -100, 0) `% less pocket for women versus men.
+In this sample of 20 brands, women's jeans had an average pocket size of `r round(mean(brands_parity$avg_area_w), 1)` sq. cm, whereas men had a generous `r round(mean(brands_parity$avg_area_m), 1)`. That's an overall pocket parity score of `r round(mean(brands_parity$avg_area_w) / mean(brands_parity$avg_area_m) - 1, 2)` sq. cm, meaning that women are losing out on almost half the pocket space that men have. Although all women's pockets were smaller than men's, there was wide variation in pocket parity between brands, with Abercrombie scoring well above average (`r format(round(brands_parity$pocket_size_parity[brands_parity$brand == "Abercrombie"], 2), nsmall = 2)`) and Gap scoring a sad `r format(round(brands_parity$pocket_size_parity[brands_parity$brand == "Gap"], 2), nsmall = 2)`. Among Gap enthusiasts, this translates to `r round(brands_parity$pocket_size_parity[brands_parity$brand == "Gap"] * -100, 0) `% less pocket space for women versus men.
 
 
 <div align="center">
@@ -161,6 +161,7 @@ brands_parity %>%
   theme(
     text = element_text(family = "mont"),
     panel.grid = element_blank(),
+    plot.margin = margin(r = 7),
     legend.position = "left",
     legend.margin = margin(r = -1.5, unit = "cm"),
     axis.ticks.x = element_line(),
