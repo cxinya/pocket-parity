@@ -47,7 +47,7 @@ use_font("zilla-slab", "www/css/zilla-slab.css")
 setup_font(
   id = "montserrat",
   output_dir = "www",
-  variants = c("regular", "italic", "bold")
+  variants = c("regular", "italic", "700")
 )
 use_font("montserrat", "www/css/montserrat.css")
 
@@ -67,7 +67,7 @@ knitr::include_graphics("figs/pudding-pocket-difference.png")
 ```
 
 ## Why Pockets?
-Pockets are useful. Period. Yet, so many pockets intended for women are more decorative than functional. I have looked on with jealousy as my husband easily slips a wallet, phone, and keys into his capacious pockets while I struggle to cram a single tube of chapstick into mine. And I'm not the only who thinks so &mdash; the internet is full of [memes](https://static.boredpanda.com/blog/wp-content/uploads/2019/11/1138428432554123264-png__700.jpg), [fashion history](https://medium.com/verve-up/the-bewildering-and-sexist-history-of-womens-pockets-1edf3a98117), and [speculation](https://www.quora.com/Why-does-womens-clothing-often-have-small-or-nonexistent-pockets) about women are stuck with tiny pockets. Perhaps you, too, have been personally victimized by tiny pockets.
+Pockets are useful. Period. Yet, so many pockets intended for women are more decorative than functional. I have looked on with jealousy as my husband easily slips a wallet, phone, and keys into his capacious pockets while I struggle to cram a single tube of chapstick into mine. And I'm not the only who thinks so &mdash; the internet is full of [memes](https://static.boredpanda.com/blog/wp-content/uploads/2019/11/1138428432554123264-png__700.jpg), [fashion history](https://medium.com/verve-up/the-bewildering-and-sexist-history-of-womens-pockets-1edf3a98117), and [speculation](https://www.quora.com/Why-does-womens-clothing-often-have-small-or-nonexistent-pockets) about why women are stuck with tiny pockets. Perhaps you, too, have been personally victimized by tiny pockets.
 
 
 ```{r read-data}
