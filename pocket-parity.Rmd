@@ -10,6 +10,7 @@ output:
     toc: true
     toc_float: true
     css: ["pocket-parity-style.css"]
+  includes: header.html
 ---
 
 **Cynthia X. Yuen** | `r format(Sys.Date(), '%B %d, %Y')`
