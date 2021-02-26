@@ -9,7 +9,7 @@ output:
   html_document:
     toc: true
     toc_float: true
-    css: ["pocket-parity-style.css", "www/css/zilla-slab.css", "www/css/montserrat.css"]
+    css: ["www/css/pocket-parity-style.css", "www/css/zilla-slab.css", "www/css/montserrat.css"]
 ---
 
 **Cynthia X. Yuen** | `r format(Sys.Date(), '%B %d, %Y')`
