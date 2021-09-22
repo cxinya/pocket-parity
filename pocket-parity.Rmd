@@ -56,7 +56,7 @@ use_font("montserrat", "www/css/montserrat.css")
 
 
 # Introduction
-As the Director of Research & Data Analysis at the Physician Assistant Education Assocation, I routinely leverage R and R Markdown to analyze and report data of diverse shapes, sizes, and sources. However, I am unable to share samples of my recent professional code because data and methods are proprietary or otherwise protected. Instead, I created new visualizations to highlight an issue that plagues many women: **our pockets are simply too small.**
+As the Managing Director of Data Analytics & Measurement at Flamboyan Foundation, I routinely leverage R and R Markdown to analyze and report data of diverse shapes, sizes, and sources. However, I am unable to share samples of my recent professional code because data and methods are proprietary or otherwise protected. Instead, I created new visualizations to highlight an issue that plagues many women: **our pockets are simply too small.**
 
 ## Data Source
 I borrowed data collected by the brilliant data journalists at [The Pudding](https://pudding.cool), who measured the pockets on men's and women's jeans from 20 brands and [obsessively demonstrated](https://pudding.cool/2018/08/pockets/) that women's pockets are smaller and shallower than men's. Galvanized by their shocking revelations, I wanted to see what other questions I could answer with this dataset.
